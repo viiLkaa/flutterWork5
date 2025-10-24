@@ -47,6 +47,9 @@ class _TaskCreateScreenState extends State<TaskCreateScreen> {
                   _title = value ?? '';
                 },
               ),
+              SizedBox(height: 15),
+
+
               TextFormField(
                 decoration: InputDecoration(labelText: 'Описание'),
                 maxLines: 3,
@@ -54,6 +57,8 @@ class _TaskCreateScreenState extends State<TaskCreateScreen> {
                   _description = value ?? '';
                 },
               ),
+              SizedBox(height: 15),
+
               DropdownButtonFormField<TaskStatus>(
                 value: _status,
                 decoration: InputDecoration(labelText: 'Статус'),
